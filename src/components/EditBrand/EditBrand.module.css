@@ -1,0 +1,165 @@
+.btns {
+  padding: 5px;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: flex-end;
+  gap: 10px;
+}
+.btn {
+  font-size: 1rem;
+  padding: 3px 7px;
+  border: 1px solid var(--theme-primary);
+  color: var(--theme-primary);
+  background: none;
+  cursor: var(--cursor-pointer);
+  user-select: none;
+}
+
+.btn._active {
+  color: var(--theme-active);
+  border-color: var(--theme-active);
+}
+.btn._success {
+  color: var(--theme-success);
+  border-color: var(--theme-success);
+}
+.btn._warning {
+  color: var(--theme-warning);
+  border-color: var(--theme-warning);
+}
+.btn._failure {
+  color: var(--theme-failure);
+  border-color: var(--theme-failure);
+}
+
+.nameBlock {
+  box-sizing: border-box;
+  width: 100%;
+  background: var(--theme-nearest);
+  padding: 5px;
+}
+.nameLabel {
+  width: 100%;
+  display: block;
+  position: relative;
+  z-index: 4;
+  font-size: 1rem;
+}
+.name {
+  font-size: 1em;
+  width: 100%;
+  position: relative;
+  z-index: 5;
+  box-sizing: border-box;
+  border: 1px solid var(--theme-secondary);
+  background: var(--theme-secondary);
+  color: var(--theme-nearest-high);
+}
+.name:active {
+  outline: 1px solid var(--theme-active);
+}
+.name:focus {
+  outline: 1px solid var(--theme-active);
+}
+.nameLabel[data-status="WARNING"] .name {
+  color: var(--theme-warning);
+  border-color: var(--theme-warning);
+}
+.nameLabel[data-status="ERROR"] .name {
+  color: var(--theme-failure);
+  border-color: var(--theme-failure);
+}
+
+.nameStatusIcon {
+  font-size: 1em;
+  pointer-events: none;
+  position: absolute;
+  z-index: 7;
+  top: 50%;
+  right: 5px;
+  transform: translate(0, -50%);
+}
+
+.nameStatusIcon._error {
+  color: var(--theme-failure);
+}
+
+.msgError {
+  padding: 10px 20px;
+  color: var(--theme-failure);
+  display: flex;
+  flex-wrap: nowrap;
+  align-items: center;
+  justify-content: center;
+}
+.msgErrorIcon {
+  font-size: 1.5rem;
+}
+.msgErrorText {
+  font-size: 1rem;
+}
+
+.marks {
+  padding: 5px;
+}
+.marksList {
+  list-style: none;
+  padding: 0px 0px 0px 10px;
+  margin: 0;
+}
+.mark {
+  padding: 0px 0px 5px 0px;
+}
+.markBody {
+  width: 100%;
+  display: flex;
+  flex-wrap: nowrap;
+}
+.markNameBlock {
+  flex: 1 1 220px;
+  max-width: 220px;
+}
+.markNameLabel {
+  width: 100%;
+  display: block;
+  position: relative;
+  z-index: 4;
+  font-size: 1rem;
+}
+.markName {
+  font-size: 1em;
+  width: 100%;
+  position: relative;
+  z-index: 5;
+  box-sizing: border-box;
+  border: 1px solid var(--theme-secondary);
+  background: var(--theme-secondary);
+  color: var(--theme-nearest-high);
+}
+.markName:active {
+  outline: 1px solid var(--theme-active);
+}
+.markName:focus {
+  outline: 1px solid var(--theme-active);
+}
+.markActions {
+  min-width: 40px;
+  flex: 0 0 auto;
+  padding: 0px 0px 0px 5px;
+  margin: 0px 0px 0px auto;
+  border-left: 1px solid var(--theme-secondary);
+  display: flex;
+  flex-wrap: nowrap;
+  justify-content: flex-end;
+  align-items: center;
+  gap: 2px;
+}
+.markRemove {
+  font-size: 1.2em;
+  cursor: var(--cursor-pointer);
+}
+
+.footer {
+  background: var(--theme-nearest-high);
+}
